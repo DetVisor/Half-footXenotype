@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeDef>
+    <defName>DV_Halffoot</defName>
+    <label>half-foot</label>
+    <description>Within the guts of starships and megaengineering projects, the half-foots are a common sight. Their short stature and nimble physique make them ideal for navigating tight corridors, and their hardy immune system is suited for workshops filled with rusty implements and machines belching smoke and soot. \n\nHalf-foot minds are highly logical and well-suited towards mechanical work. They are especially inclined towards mechanoids, possessing an innate understanding of their inner workings and a superior capability to control them. However, this focus on machinery leaves them stumped on how living beings work, especially in regards to anatomy and animal husbandry. Their extensive genetic modification has also led to them possessing short lives and even shorter tempers, making it fairly common for an altercation to erupt if someone were to cast aspersions on their mechanical abilities — or worse, their height. \n\nHalf-foots were developed by an ancient urbworld megacorp, bio-engineered to manufacture complex machinery and command swarms of construction drones. Their high productivity and adaptability led to their spread into highly technical industries, including the then burgeoning spacecraft industry. This proved to be a mistake, as a group of half-foots overrode the lockdown protocols on a colony ship and escaped into the stars. Now they can be found across the galaxy, often as ship engineers or mechanitors.</description>
+    <descriptionShort>Within the guts of starships and megaengineering projects, the half-foots are a common sight. Their short stature and nimble physique make them ideal for navigating tight corridors, and their hardy immune system is suited for workshops filled with rusty implements and machines belching smoke and soot. \n\nHalf-foot minds are highly logical and well-suited towards mechanical work. They are especially inclined towards mechanoids, possessing an innate understanding of their inner workings and a superior capability to control them. However, this focus on machinery leaves them stumped on how living beings work, especially in regards to anatomy and animal husbandry. Their extensive genetic modification has also led to them possessing short lives and even shorter tempers, making it fairly common for an altercation to erupt if someone were to cast aspersions on their mechanical abilities — or worse, their height.</descriptionShort>
+    <iconPath>UI/Xenotypes/Halffoot</iconPath>
+    <inheritable>true</inheritable>
+	  <nameMaker>NamerPersonHalffoot</nameMaker>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <genes>
+	  <li>MoveSpeed_Quick</li>
+    <li>Delicate</li>
+    <li>DV_Bandwidth_High</li>
+	  <li>MeleeDamage_Weak</li>    
+	  <li>Beard_NoBeardOnly</li>
+	  <li>Immunity_Strong</li>
+    <li>DV_Melee_Fast</li>
+    <li>Learning_Fast</li>
+    <li>Instability_Mild</li>
+    <li>DV_Aggression_Hotheaded</li>
+    <li>DV_MechanicIntuitions</li>
+    <li>DV_Pushover</li>
+    <li>AptitudeRemarkable_Crafting</li>
+	  <li>AptitudeTerrible_Medicine</li>
+	  <li>AptitudeTerrible_Animals</li>
+    <li>Body_Thin</li>
+    <li>DV_Ears_Broad</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>
