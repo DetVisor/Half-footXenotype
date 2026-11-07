@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TipSetDef>
+    <defName>DV_HalffootTip</defName>
+    <tips>
+
+      <li TKey="HalffootTip">Insulting an half-foot on their height usually results in a charge lance bullet through the chest.</li>
+
+    </tips>
+  </TipSetDef>
+
+</Defs>

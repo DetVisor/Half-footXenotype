@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Expanded Framework</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<order>Append</order>
+					<value>
+                     	<GeneDef>
+                    		<defName>DV_ExtrasmallBuild</defName>
+                    		<label>half-sized</label>
+                    		<description>Carriers of this gene grow to only be half the size of a normal human while staying mostly proportional.</description>
+                       		<iconPath>UI/Genes/Gene_ExtraSmall</iconPath>
+                               <exclusionTags>
+                                <li>AG_BodySize</li>
+                                <li>Size</li>
+                            </exclusionTags>
+                   		    <statFactors>
+                			    <Mass>0.60</Mass>
+                                <MeatAmount>0.60</MeatAmount>
+                                <LeatherAmount>0.60</LeatherAmount>
+								<VEF_CosmeticBodySize_Multiplier>0.75</VEF_CosmeticBodySize_Multiplier>
+								<VEF_HeadSize_Cosmetic>0.90</VEF_HeadSize_Cosmetic>
+                 		    </statFactors>
+                 		    <displayOrderInCategory>0</displayOrderInCategory>
+                		    <biostatCpx>1</biostatCpx>
+                 		    <biostatMet>0</biostatMet>		
+                		    <selectionWeight>0</selectionWeight>
+	                    </GeneDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/XenotypeDef[defName='DV_Halffoot']/genes</xpath>
+					<order>Append</order>
+					<value>
+						<li>DV_ExtrasmallBuild</li>
+					</value>
+				</li>				
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<GeneDef>
+    <defName>DV_Bandwidth_High</defName>
+    <label>high bandwidth</label>
+    <iconPath>UI/Genes/Gene_ImprovedBandwidth</iconPath>
+    <description>Carriers of this gene are capable of forming a wider bandwidth network thanks to a special lobe in their brain.</description>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <statOffsets>
+      <MechBandwidth>3</MechBandwidth>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>receptive</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_Melee_Fast</defName>
+    <label>fast hitter</label>
+    <iconPath>UI/Genes/Gene_LightHitter</iconPath>
+    <description>Carriers of this gene have lighter arms that make them faster at swinging melee weapons.</description>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <statOffsets>
+      <MeleeCooldownFactor>-0.18</MeleeCooldownFactor>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>fast</symbol>
+        </li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li>
+          <symbol>hitter</symbol>
+        </li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_Pushover</defName>
+    <label>pushover</label>
+    <description>Carriers of this gene are slowed down far more when taking damage.</description>
+    <iconPath>UI/Genes/Gene_Pushover</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>550</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>+1</biostatMet>
+    <statFactors>
+      <StaggerDurationFactor>1.25</StaggerDurationFactor>
+    </statFactors>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneAggressionBase">
+    <defName>DV_Aggression_Hotheaded</defName>
+    <label>hotheaded</label>
+    <description>Carriers of this gene are volatile and impulsive. They will more often have violent outbursts.</description>
+    <iconPath>UI/Genes/Gene_Hotheaded</iconPath>
+    <aggroMentalBreakSelectionChanceFactor>2</aggroMentalBreakSelectionChanceFactor>
+    <prisonBreakMTBFactor>0.5</prisonBreakMTBFactor>
+    <displayOrderInCategory>10</displayOrderInCategory>
+    <biostatMet>1</biostatMet>
+    <exclusionTags>
+      <li>Aggressive</li>
+    </exclusionTags>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>aggro</symbol></li>
+        <li><symbol>snob</symbol></li>
+        <li><symbol>angry</symbol></li>
+        <li><symbol>destro</symbol></li>
+        <li><symbol>barb</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>fighter</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_MechanicIntuitions</defName>
+    <label>mechanic intuitions</label>
+    <iconPath>UI/Genes/Gene_MechanicInstincts</iconPath>
+    <description>Carriers of this gene are wired to better understand the complex yet systemic logic that underlines mechanoid functionality (and other programmatic work).</description>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <statFactors>
+      <FixBrokenDownBuildingSuccessChance>1.25</FixBrokenDownBuildingSuccessChance>
+      <MechRepairSpeed>1.25</MechRepairSpeed>
+      <HackingSpeed>1.50</HackingSpeed>
+    </statFactors>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>DV_Ears_Broad</defName>
+    <label>broad ears</label>
+    <description>Carriers of this gene have broad, large ears which increase their sensitivity to sound.</description>
+    <iconPath>UI/Genes/Gene_Ears_Broad</iconPath>
+    <forcedHeadTypes>
+      <li>Male_AverageNormal</li>
+      <li>Female_AverageNormal</li>
+    </forcedHeadTypes>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPath>Things/Pawn/Humanlike/HeadAttachments/BroadEars/BroadEars</texPath>
+       <colorType>Skin</colorType>
+       <parentTagDef>Head</parentTagDef>
+       <useSkinShader>true</useSkinShader>
+       <useRottenColor>true</useRottenColor>
+       <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <defaultData>
+            <layer>60</layer>
+          </defaultData>
+          <dataEast>
+            <layer>80</layer>
+          </dataEast>
+          <dataWest>
+            <layer>80</layer>
+          </dataWest>
+        </drawData>
+      </li>
+  </renderNodeProperties>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>broad</symbol></li>
+        <li><symbol>flat</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>ear</symbol></li>
+        <li><symbol>round</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+</Defs>

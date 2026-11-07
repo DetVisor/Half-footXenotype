@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<DV_Halffoot>0.06</DV_Halffoot>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Pirate"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<DV_Halffoot>0.05</DV_Halffoot>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="TradersGuild"]/xenotypeSet/xenotypeChances</xpath>
+					<value>
+						<DV_Halffoot>0.07</DV_Halffoot>
+					</value>
+				</li>
+			</operations>
+		</match>
+		
+	</Operation>
+
+</Patch>
